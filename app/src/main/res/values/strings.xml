@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">notes</string>
+     <string name="title_inp_out">Доход/Расход</string>
+    <string name="title_cat_main">Категории</string>
+    <string name="title_static">Статистика</string>
+
+    <string name="title_out_text">Расход</string>
+    <string name="title_in_text">Доход</string>
+     <string name="title_out_texts">Расходы</string>
+    <string name="title_in_texts">Доходы</string>
+    <string name="title_find">Найти</string>
+
+    <string name="work_one">Работа 1</string>
+    <string name="work_two">Работа 2</string>
+    <string name="procent">Проценты</string>
+    <string name="rent">Рента</string>
+    <string name="fond_b">Фондовая биржа</string>
+    <string name="crypto">Криптобиржа</string>
+     <string name="another">Другое</string>
+
+    <string name="eat">Еда</string>
+    <string name="buys">Покупки</string>
+    <string name="traveling">Путешествия</string>
+    <string name="restoraunt">Рестораны</string>
+    <string name="family">Семья</string>
+    <string name="communal">Коммунальные услуги</string>
+    <string name="investing">Инвестиции</string>
+    <string name="medical">Медицинские услуги</string>
+    <string name="funny">Развлечение</string>
+    <string name="exit_from_account">Выйти из аккаунта</string>
+
+    <string name="limit_set">Установить лимит трат</string>
+    <string name="in_please_text">Введите доход</string>
+    <string name="empty_price">0</string>
+    <string name="empty_data">10.10.2024</string>
+    <string name="enter_or_sign">Войдите или Зарегистрируйтесь</string>
+    <string name="email_str">Введите email</string>
+    <string name="password_str">Введите пароль</string>
+    <string name="registra">Регистрация</string>
+    <string name="enter_sign">Вход</string>
+    <string name="zaregistr">Зарегистрироваться</string>
+    <string name="edit_name">Внесите изменения</string>
+    <string name="change_enter">Сохранить изменения</string>
+    <string name="title_edit">Изменение</string>
+    <string name="add_stat_doh">Доход</string>
+    <string name="add_stat_rash">Расход</string>
+    <string name="add_stat_exit">Выход</string>
+
+    <string name="in_please_rash">Введите ваш расход</string>
+    <string name="date_enter">Дата внесения</string>
+    <string name="your_income_now">Ваш расход</string>
+    <string name="your_income_save">Сумма</string>
+    <string name="your_outcome">Ваш расход</string>
+    <string name="name_trat_ras">Название расхода</string>
+    <string name="comment_trat_raz">Комментарий к расходу</string>
+    <string name="your_income_carrer">Ваша категория</string>
+    <string name="name_trat">Название дохода</string>
+    <string name="name_tat_save">Название</string>
+    <string name="rasshh_sdf">Категория расхода</string>
+    <string name="comment_trat">Комментарий к доходу</string>
+    <string name="comment_tratsave">Комментарий</string>
+    <string name="cat_sdf_stat">Категория дохода</string>
+    <string name="cart_save_sdf">Категория</string>
+    <string name="categotytype">Категории</string>
+    <string name="set_priority">Установите приоритетную категорию</string>
+    <string name="main_frag">Список заметок</string>
+    <string name="cretaa_not">Создать заметку</string>
+    <string name="list_all_n">Ваши заметки</string>
+    <string name="enter_text_big">Введите заголовок статьи</string>
+    <string name="please_test_enter">Введите тут текст</string>
+    <string name="save_notes">Сохранить заметку</string>
+    <string name="enter_text_main">Введите основной текст заметки</string>
+    <string name="ok_add">Поздравляем! Заметка успешно добавлена</string>
+    <string name="failure_add">Ошибка, не получилось добавить заметку</string>
+</resources>

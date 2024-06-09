@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_list_noter"
+    android:id="@+id/mobile_navigation">
+
+         <fragment
+        android:id="@+id/navigation_list_noter"
+        android:name="com.work.vanya.notes.fragments.ListAllNotes"
+        android:label="@string/list_all_n"
+        tools:layout="@layout/list_all_notes_fragment">
+
+<!--    <action android:id="@+id/move_on_to_category"-->
+<!--            app:destination="@+id/navigation_category" />-->
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/create_notes"
+        android:name="com.work.vanya.notes.fragments.CreateNoteFrag"
+        android:label="@string/title_cat_main"
+        tools:layout="@layout/create_note_fragment"
+        >
+    </fragment>
+
+
+</navigation>

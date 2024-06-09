@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "360175757796",
+    "project_id": "testnotes-29acf",
+    "storage_bucket": "testnotes-29acf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360175757796:android:a9816e8d2cbe8d1626bff1",
+        "android_client_info": {
+          "package_name": "com.work.vanya.notes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDTr_cgIh9DE_e5uoWCospN9eMus5VOGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

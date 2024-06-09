@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_marginTop="30dp"
+         android:text="@string/enter_or_sign"
+         android:textSize="20sp"
+         android:lines="1"
+         android:keepScreenOn="true"
+         android:gravity="center"
+         android:textStyle="bold"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/email_str"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"
+        />
+
+      <EditText
+          android:id="@+id/enter_email_sign"
+          android:layout_width="match_parent"
+          android:layout_height="46dp"
+          android:layout_marginHorizontal="40dp"
+          android:layout_marginTop="20dp"
+          />
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/password_str"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"
+        android:inputType="text"
+        />
+
+      <EditText
+          android:id="@+id/password_enter_sign"
+          android:layout_width="match_parent"
+          android:layout_height="46dp"
+          android:inputType="textPassword"
+          android:layout_marginHorizontal="40dp"
+          android:layout_marginTop="20dp"
+          />
+
+
+
+        <Button
+            android:id="@+id/registetbut_insign"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginHorizontal="50dp"
+            android:text="@string/registra"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/enter_in_signaa"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="40dp"
+            android:text="@string/enter_sign"
+            />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

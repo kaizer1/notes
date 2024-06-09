@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    android:icon="@drawable/ic_dashboard_black_24dp"-->
+    <item
+        android:id="@+id/navigation_list_noter"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="@string/main_frag" />
+
+    <item
+        android:id="@+id/create_notes"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/cretaa_not" />
+
+</menu>
