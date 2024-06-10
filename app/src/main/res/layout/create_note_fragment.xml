@@ -11,7 +11,8 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
         android:text="@string/enter_text_big"
         android:textStyle="bold"
         android:textSize="16sp"
@@ -23,7 +24,8 @@
 
      <EditText
          android:layout_width="match_parent"
-         android:layout_height="52dp"
+          android:layout_height="0dp"
+        android:layout_weight="0.1"
          android:id="@+id/edit_bigzagol"
          android:textColor="@color/black"
          android:layout_marginHorizontal="20dp"
@@ -33,7 +35,8 @@
 
      <TextView
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
         android:text="@string/enter_text_main"
         android:textStyle="bold"
         android:textSize="16sp"
@@ -45,7 +48,7 @@
 
      <EditText
          android:layout_width="match_parent"
-         android:layout_height="400dp"
+         android:layout_height="200dp"
          android:id="@+id/edit_maintext"
          android:textColor="@color/black"
          android:layout_marginHorizontal="20dp"
@@ -59,9 +62,11 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/save_notes"
         android:id="@+id/id_save"
         />
