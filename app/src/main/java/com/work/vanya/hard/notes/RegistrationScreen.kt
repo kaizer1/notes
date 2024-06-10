@@ -1,4 +1,4 @@
-package com.work.vanya.notes
+package com.work.vanya.hard.notes
 
 import android.content.Context
 import android.content.Intent
@@ -11,6 +11,7 @@ import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import com.google.firebase.auth.FirebaseAuth
+import com.work.vanya.hard.notes.R
 
 class RegistrationScreen : AppCompatActivity() {
 

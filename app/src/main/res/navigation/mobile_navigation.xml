@@ -7,7 +7,7 @@
 
          <fragment
         android:id="@+id/navigation_list_noter"
-        android:name="com.work.vanya.notes.fragments.ListAllNotes"
+        android:name="com.work.vanya.hard.notes.fragments.ListAllNotes"
         android:label="@string/list_all_n"
         tools:layout="@layout/list_all_notes_fragment">
 
@@ -18,7 +18,7 @@
 
     <fragment android:id="@+id/navi_edit_this"
         android:label="@string/frag_edit"
-        android:name="com.work.vanya.notes.fragments.FragmentEdit"
+        android:name="com.work.vanya.hard.notes.fragments.FragmentEdit"
         tools:layout="@layout/edit_fragment"
         >
 
@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/create_notes"
-        android:name="com.work.vanya.notes.fragments.CreateNoteFrag"
+        android:name="com.work.vanya.hard.notes.fragments.CreateNoteFrag"
         android:label="@string/title_cat_main"
         tools:layout="@layout/create_note_fragment"
         >

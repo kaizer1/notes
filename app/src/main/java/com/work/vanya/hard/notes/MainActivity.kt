@@ -1,4 +1,4 @@
-package com.work.vanya.notes
+package com.work.vanya.hard.notes
 
 import android.content.Context
 import android.content.Intent
@@ -12,8 +12,8 @@ import androidx.core.view.WindowInsetsControllerCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.work.vanya.notes.SignInPleaseScreen
-import com.work.vanya.notes.databinding.ActivityMainBinding
+import com.work.vanya.hard.notes.R
+import com.work.vanya.hard.notes.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

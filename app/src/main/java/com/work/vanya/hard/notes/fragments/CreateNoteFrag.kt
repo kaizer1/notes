@@ -1,4 +1,4 @@
-package com.work.vanya.notes.fragments
+package com.work.vanya.hard.notes.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -10,8 +10,8 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.firebase.firestore.FirebaseFirestore
-import com.work.vanya.notes.R
-import com.work.vanya.notes.databinding.CreateNoteFragmentBinding
+import com.work.vanya.hard.notes.R
+import com.work.vanya.hard.notes.databinding.CreateNoteFragmentBinding
 
 class CreateNoteFrag : Fragment() {
 

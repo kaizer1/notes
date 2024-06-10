@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.work.vanya.notes"
+    namespace = "com.work.vanya.hard.notes"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.work.vanya.notes"
+        applicationId = "com.work.vanya.hard.notes"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

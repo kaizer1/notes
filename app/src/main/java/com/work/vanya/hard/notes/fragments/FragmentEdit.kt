@@ -1,4 +1,4 @@
-package com.work.vanya.notes.fragments
+package com.work.vanya.hard.notes.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -12,8 +12,8 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.firestore.FirebaseFirestore
-import com.work.vanya.notes.R
-import com.work.vanya.notes.databinding.EditFragmentBinding
+import com.work.vanya.hard.notes.R
+import com.work.vanya.hard.notes.databinding.EditFragmentBinding
 
 class FragmentEdit : Fragment() {
 

@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:paddingTop="4dp"
     android:paddingHorizontal="2dp"
-    tools:context=".MainActivity">
+    tools:context="com.work.vanya.hard.notes.MainActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
