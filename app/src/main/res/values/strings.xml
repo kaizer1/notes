@@ -71,5 +71,10 @@
     <string name="save_notes">Сохранить заметку</string>
     <string name="enter_text_main">Введите основной текст заметки</string>
     <string name="ok_add">Поздравляем! Заметка успешно добавлена</string>
+    <string name="frag_edit">Редактирование</string>
     <string name="failure_add">Ошибка, не получилось добавить заметку</string>
+    <string name="zago">Заголовок</string>
+    <string name="main_t">Основной текст</string>
+    <string name="save_edit_note">Сохранить заметку</string>
+    <string name="remove_note">Удалить заметку</string>
 </resources>

@@ -5,9 +5,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.SimpleAdapter
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.firestore.FirebaseFirestore
 import com.work.vanya.notes.R
 
@@ -36,6 +38,7 @@ class ListAllNotes : Fragment() {
 
 
        myListMain = root.findViewById(R.id.my_main_list)
+             val navLos =  this.findNavController()
 
        val  share = requireParentFragment().requireContext().getSharedPreferences("main", Context.MODE_PRIVATE)
 
@@ -57,6 +60,8 @@ class ListAllNotes : Fragment() {
 
                           map["Zagolovok"] = document.data["Big"].toString()
                           map["main_text"] = document.data["text_main"].toString()
+                          map["id_doc"] = document.id
+
 
                           println(" sdfsdf ! ")
                           arrayList.add(map)
@@ -65,7 +70,7 @@ class ListAllNotes : Fragment() {
 
                      println(" size = ${arrayList.size}")
 
-     val adap = SimpleAdapter(binding.root.context, arrayList,
+            val adap = SimpleAdapter(binding.root.context, arrayList,
                                   R.layout.layout_all_not_see, arrayOf("Zagolovok", "main_text"),
                                   intArrayOf(R.id.one_view, R.id.two_view)
                               )
@@ -76,6 +81,24 @@ class ListAllNotes : Fragment() {
 
                 }
 
+
+
+
+                 myListMain.onItemClickListener  = AdapterView.OnItemClickListener { parent, view, position, id ->
+
+               // println(" my arrayPos Select == ${arrayList[position]["mainText"]} ")
+               // println(" position and id =${position} , ${id}")
+
+                   val df = share.edit()
+
+                                 df.let {
+                                     df.putString("selectVar", arrayList[position]["id_doc"].toString())
+                                 }.apply()
+
+                //
+
+                navLos.navigate(R.id.move_to_see_edit)
+            }
 
 
 

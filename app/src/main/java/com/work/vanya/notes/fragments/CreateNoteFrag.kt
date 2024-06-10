@@ -38,6 +38,12 @@ class CreateNoteFrag : Fragment() {
 
         val  share = requireParentFragment().requireContext().getSharedPreferences("main", Context.MODE_PRIVATE)
 
+
+
+
+
+
+
         val SaveButton = root.findViewById<Button>(R.id.id_save).setOnClickListener {
 
               if(editMainBig.text.isEmpty()  || editMainText.text.isEmpty()){
