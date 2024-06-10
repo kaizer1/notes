@@ -44,43 +44,47 @@ class ListAllNotes : Fragment() {
 
 
 
-                  db.collection(share.getString("main", "")!!)
-                .get()
-                .addOnSuccessListener { result ->
+            if(share.getString("main", "")!!.isNotEmpty()) {
+
+                db.collection(share.getString("main", "")!!)
+                    .get()
+                    .addOnSuccessListener { result ->
 
 
-                     if(arrayList.isNotEmpty()){
-                         arrayList.clear()
-                     }
+                        if (arrayList.isNotEmpty()) {
+                            arrayList.clear()
+                        }
 
 
-                      for (document in result ) {
+                        for (document in result) {
 
-                          val map: HashMap<String, String> = HashMap()
+                            val map: HashMap<String, String> = HashMap()
 
-                          map["Zagolovok"] = document.data["Big"].toString()
-                          map["main_text"] = document.data["text_main"].toString()
-                          map["id_doc"] = document.id
-
-
-                          println(" sdfsdf ! ")
-                          arrayList.add(map)
-                      }
+                            map["Zagolovok"] = document.data["Big"].toString()
+                            map["main_text"] = document.data["text_main"].toString()
+                            map["id_doc"] = document.id
 
 
-                     println(" size = ${arrayList.size}")
-
-            val adap = SimpleAdapter(binding.root.context, arrayList,
-                                  R.layout.layout_all_not_see, arrayOf("Zagolovok", "main_text"),
-                                  intArrayOf(R.id.one_view, R.id.two_view)
-                              )
-
-                     myListMain.adapter = adap
-                     myListMain.divider = null
+                            println(" sdfsdf ! ")
+                            arrayList.add(map)
+                        }
 
 
-                }
+                        println(" size = ${arrayList.size}")
 
+                        val adap = SimpleAdapter(
+                            binding.root.context, arrayList,
+                            R.layout.layout_all_not_see, arrayOf("Zagolovok", "main_text"),
+                            intArrayOf(R.id.one_view, R.id.two_view)
+                        )
+
+                        myListMain.adapter = adap
+                        myListMain.divider = null
+
+
+                    }
+
+            }
 
 
 

@@ -26,7 +26,10 @@ class MainActivity : AppCompatActivity() {
         this.enableEdgeToEdge()
         //setContentView(R.layout.activity_main)
 
+        println("'sdlfkjasdkljfklasdjflkjasdf")
           binding = ActivityMainBinding.inflate(layoutInflater)
+
+        println(" lsdkjflkasdjf atgewlk;rjkawjehfkjasdhfjklahsd ")
         setContentView(binding.root)
 
         hideSystemUI()
@@ -34,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         share = baseContext.getSharedPreferences("main", Context.MODE_PRIVATE)
         val authoEnter  = share.getString("main", "")
 
-        println(" my get authoEnter = \${authoEnter}")
+        println(" my get authoEnter = $authoEnter")
 
         if (authoEnter!!.isEmpty()) {
 
@@ -45,10 +48,9 @@ class MainActivity : AppCompatActivity() {
 
 
             // create navigation controller
-         val navView: BottomNavigationView = binding.navView
-
-         val navController = findNavController(R.id.nav_host_fragment_activity_main)
-          navView.setupWithNavController(navController)
+            // val navView: BottomNavigationView = binding.navView
+          //val navController = findNavController(R.id.nav_host_fragment_activity_main)
+           //navView.setupWithNavController(navController)
 
     }
 

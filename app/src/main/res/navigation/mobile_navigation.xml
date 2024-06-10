@@ -22,7 +22,7 @@
         tools:layout="@layout/edit_fragment"
         >
 
-            <action android:id="@+id/back_to"
+            <action android:id="@+id/back_too"
             app:destination="@+id/navigation_list_noter" />
     </fragment>
 

@@ -37,7 +37,6 @@ class FragmentEdit : Fragment() {
 
 
 
-
              val navLos =  this.findNavController()
 
              val editZagolo = root.findViewById<EditText>(R.id.zagolo_edit)
@@ -46,19 +45,16 @@ class FragmentEdit : Fragment() {
 
 
 
-             db.collection(share.getString("main", "")!!).document(share.getString("selectVar", "")!!)
-                 .get()
-                 .addOnSuccessListener {  it ->
-                     editZagolo.setText(it.data!!["Big"].toString())
-                     editMainT.setText(it.data!!["text_main"].toString())
-                 }
+        if(share.getString("main", "")!!.isNotEmpty()) {
+            db.collection(share.getString("main", "")!!)
+                .document(share.getString("selectVar", "")!!)
+                .get()
+                .addOnSuccessListener { it ->
+                    editZagolo.setText(it.data!!["Big"].toString())
+                    editMainT.setText(it.data!!["text_main"].toString())
+                }
 
-
-
-
-
-
-
+        }
 
 
              val buttonRemove = root.findViewById<Button>(R.id.remove_n).setOnClickListener {
@@ -66,7 +62,7 @@ class FragmentEdit : Fragment() {
                          db.collection(share.getString("main", "")!!).document(share.getString("selectVar", "")!!)
                              .delete()
 
-                 navLos.navigate(R.id.back_to)
+                 navLos.navigate(R.id.back_too)
              }
 
 
@@ -98,7 +94,7 @@ class FragmentEdit : Fragment() {
             }
 
             val butRetur = root.findViewById<ImageButton>(R.id.back_main_frag).setOnClickListener {
-                navLos.navigate(R.id.back_to)
+               navLos.navigate(R.id.back_too)
             }
 
 
